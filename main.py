@@ -4,6 +4,7 @@
 # In[ ]:
 
 
+import os #OS related functions
 import tkinter #GUI Module
 import cv2 # Computer Vision Module based on OpenCV
 import PIL.Image,PIL.ImageTk # Python Image processing Module
@@ -18,6 +19,9 @@ import face_recognition # Python Module for Face Recognition Module based on dli
 
 # In[ ]:
 
+
+#Create Data Storage Folder
+os.mkdir('Data')
 
 #Create Storage file
 f = h5.File('Data/Faces.h5','a')
